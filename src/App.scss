@@ -1,0 +1,99 @@
+#root {
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: unset;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  & h1 {
+    text-align: center;
+  }
+
+  & .content {
+    display: flex;
+    position: relative;
+    min-height: 90vh;
+    width: 100vw;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__anotations {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 60vw;
+
+      & button {
+        margin: 1rem .5rem;
+      }
+
+    }
+
+  }
+
+}
+
+.icon__button {
+
+  position: relative;
+
+  & button {
+    position: relative;
+    z-index: 1;
+  }
+
+  & div:last-child {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+}
+
+.MuiPaper-root {
+  width: min-content;
+  padding: 1.2rem;
+
+  .MuiCardContent-root {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-width: 30vw;
+
+    & .card__content {
+      display: flex;
+      position: relative;
+
+      & span {
+        text-wrap: nowrap;
+      }
+
+      & div {
+        width: 0.1rem;
+      }
+
+    }
+
+  }
+
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
