@@ -11,4 +11,4 @@
    }
 ```
 
-### Tell ty here: [Github](https://github.com/AskardGO)
+### Tell ty here: [Telegram](https://t.me/askard_go)
